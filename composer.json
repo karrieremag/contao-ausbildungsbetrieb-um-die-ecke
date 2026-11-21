@@ -1,0 +1,27 @@
+{
+    "name": "karrieremag/contao-ausbildungsbetrieb-um-die-ecke",
+    "description": "Ausbildungsbetrieb um die Ecke: kostenloses Azubi-Siegel und Widget mit Karte (Map), Ausbildungsberufen und Weg mit Bus und Bahn. Zeigen Sie auf Ihrer Webseite, dass Sie ausbilden. Von dein-ausbildungsplatz.de.",
+    "keywords": ["contao", "ausbildung", "azubi", "lehrstelle", "ausbildungsplatz", "ausbildungsbetrieb", "ausbildungsberufe", "karriere", "siegel", "widget", "karte", "map"],
+    "type": "contao-bundle",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://karrieremag.de/siegel.html",
+    "authors": [{"name": "Karrieremag GmbH", "homepage": "https://karrieremag.de/"}],
+    "support": {"email": "info@karrieremag.de", "docs": "https://karrieremag.de/faq.html#siegel"},
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "contao/core-bundle": "^4.13 || ^5.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {"Karrieremag\\AudeBundle\\": "src/"},
+        "classmap": ["src/AudeAusgabe.php"]
+    },
+    "extra": {
+        "contao-manager-plugin": "Karrieremag\\AudeBundle\\ContaoManager\\Plugin"
+    }
+}
